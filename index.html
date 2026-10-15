@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LexiBoard Privacy Policy</title>
+<style>
+  :root { color-scheme: light; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 2rem 1rem;
+    background: #f6f7f9;
+    color: #1a1a1a;
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  .wrap {
+    max-width: 760px;
+    margin: 0 auto;
+    background: #fff;
+    border: 1px solid #e6e8eb;
+    border-radius: 12px;
+    padding: 2.5rem 2.75rem;
+  }
+  h1 { font-size: 1.7rem; line-height: 1.25; margin: 0 0 .5rem; }
+  h2 { font-size: 1.25rem; margin: 2.25rem 0 .75rem; padding-top: 1.25rem; border-top: 1px solid #eceef1; }
+  h2:first-of-type { border-top: 0; padding-top: 0; }
+  h3 { font-size: 1.05rem; margin: 1.5rem 0 .5rem; }
+  p, li { color: #23282d; }
+  .meta { color: #5b6167; font-size: .95rem; margin: 0 0 1.5rem; }
+  .meta strong { color: #23282d; }
+  a { color: #0b57d0; }
+  a:hover { text-decoration: none; }
+  ul { padding-left: 1.25rem; }
+  li { margin: .35rem 0; }
+  code {
+    background: #f2f3f5;
+    border: 1px solid #e6e8eb;
+    border-radius: 4px;
+    padding: .05em .35em;
+    font-size: .9em;
+    word-break: break-all;
+  }
+  .tablewrap { overflow-x: auto; margin: 1rem 0; }
+  table { border-collapse: collapse; width: 100%; font-size: .95rem; }
+  th, td { border: 1px solid #e2e5e9; padding: .55rem .7rem; text-align: left; vertical-align: top; }
+  th { background: #f6f7f9; font-weight: 600; }
+  footer { margin-top: 2.5rem; padding-top: 1.25rem; border-top: 1px solid #eceef1; color: #5b6167; font-size: .9rem; }
+  @media (max-width: 600px) {
+    body { padding: 0; }
+    .wrap { border: 0; border-radius: 0; padding: 1.5rem 1.15rem; }
+    h1 { font-size: 1.45rem; }
+  }
+</style>
+</head>
+<body>
+<main class="wrap">
+
+  <h1>LexiBoard Privacy Policy</h1>
+  <p class="meta">
+    <strong>Effective date:</strong> 15 October 2026<br>
+    <strong>Applies to:</strong> the LexiBoard Android keyboard application (<code>com.lexiboard</code>)
+  </p>
+
+  <p>LexiBoard is an independent, open-source keyboard for Android, built on the FlorisBoard
+  project. This policy explains, in plain terms, what the app does with your data. The short
+  version: the keyboard works on your device and does not collect anything for us. The
+  <strong>only</strong> time text leaves your device is when you deliberately use one of the
+  optional AI features, and then it goes to the AI provider you configure &mdash; never to a server
+  we run.</p>
+
+  <p>If any statement here does not match what you observe the app doing, please tell us (see
+  <a href="#contact">Contact</a>); that is a bug, and we will fix either the app or this document.</p>
+
+  <h2 id="who">Who we are</h2>
+  <p>LexiBoard is published by <strong>NM.Co</strong>. The data controller for this app is that
+  publisher. Contact: <a href="mailto:niranjanmeyda708@gmail.com">niranjanmeyda708@gmail.com</a>.</p>
+
+  <h2 id="on-device">What stays on your device</h2>
+  <p>Everything below is stored only in the app&rsquo;s private storage on your phone and is never
+  uploaded by LexiBoard:</p>
+  <ul>
+    <li><strong>What you type.</strong> The keyboard learns from and completes your input on the
+    device. Typing data is not transmitted.</li>
+    <li><strong>Clipboard history, emoji history, and your personal dictionary.</strong></li>
+    <li><strong>Your settings</strong> &mdash; themes, layouts, languages, gestures, and the AI
+    options described below.</li>
+    <li><strong>Your AI provider API key</strong>, if you enter one.</li>
+    <li><strong>Crash reports.</strong> If the app crashes, it can show you a local crash dialog and
+    write a log to the app&rsquo;s private storage. Nothing is uploaded automatically.</li>
+    <li><strong>Screen text read by the screen translator</strong> is processed by an on-device OCR
+    engine (Google ML Kit, with the language models bundled inside the app). The image never leaves
+    the device; only the recognised text can leave, and only as described below.</li>
+  </ul>
+  <p>LexiBoard contains <strong>no advertising, no analytics, no crash-reporting SDK, and no
+  third-party tracking of any kind</strong>. It has no user accounts and does not ask you to log
+  in.</p>
+
+  <h2 id="off-device">What is sent off your device, and when</h2>
+  <p>There are exactly two situations in which LexiBoard itself sends anything over the network.
+  Both require a deliberate action by you.</p>
+
+  <h3>1. The AI features (Rephrase, Translate, and the screen translator)</h3>
+  <p>These features are <strong>off until you explicitly agree</strong>, on a dedicated consent
+  screen shown the first time you start one of them. When you agree and then use a feature, the app
+  sends the relevant text over an encrypted (HTTPS) connection to your configured AI provider:</p>
+  <ul>
+    <li><strong>Rephrase / Translate</strong> send the sentence at your cursor, or the text you have
+    selected.</li>
+    <li><strong>The screen translator</strong> sends the text its on-device OCR read from the area
+    you framed.</li>
+    <li><strong>The translate share target</strong> sends the text you chose to share into
+    LexiBoard.</li>
+  </ul>
+  <p>That text is sent to the <strong>AI provider you configure in AI settings</strong>. By default
+  the app is set up to use the <a href="https://airouter.in" rel="noopener">AIRouter</a> gateway
+  (<code>api.airouter.in</code>), which forwards your request to a language model and returns the
+  result. Your <strong>API key</strong> is sent with each request so the provider can authorise it.
+  LexiBoard operates no server of its own and keeps no copy of your text or your key anywhere but
+  your device.</p>
+  <p>Once the text reaches your provider, that provider&rsquo;s own privacy policy governs what it
+  does with it. AIRouter is a separate company; please review its terms and privacy policy, and
+  choose a provider whose handling of your text you are comfortable with.</p>
+  <p>You can <strong>withdraw consent at any time</strong> in AI settings &rarr; Data and privacy.
+  Withdrawing stops all of these features from sending anything.</p>
+
+  <h3>2. Checking for extension updates</h3>
+  <p>FlorisBoard supports community extensions (keyboard layouts, themes, emoji packs). If you open
+  the extensions screen and tap <strong>Check for updates</strong>, the app sends the list of
+  extensions you have installed &mdash; their package identifiers and versions &mdash; to the
+  FlorisBoard addons store (<code>beta.addons.florisboard.org</code>) to ask whether newer versions
+  exist. This is a feature of the upstream FlorisBoard project and does not involve LexiBoard&rsquo;s
+  publisher. No text you have typed is included. If you never tap that button, nothing is sent.</p>
+
+  <h2 id="permissions">Permissions and why they exist</h2>
+  <div class="tablewrap">
+    <table>
+      <thead>
+        <tr><th>Permission</th><th>Why the app asks for it</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Internet</td><td>To reach your AI provider for the AI features, and the addons store for extension updates.</td></tr>
+        <tr><td>Vibrate</td><td>Haptic feedback on key press, if you enable it.</td></tr>
+        <tr><td>Post notifications</td><td>To show the foreground notification required while the screen translator is capturing the screen.</td></tr>
+        <tr><td>Draw over other apps</td><td>To show the screen-translator viewfinder over the app you are translating.</td></tr>
+        <tr><td>Foreground service / media projection</td><td>To capture the screen region you frame for the screen translator. Capture runs only while you use the feature and stops when you close it.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2 id="retention">Data retention</h2>
+  <p>LexiBoard&rsquo;s publisher retains <strong>no</strong> personal data, because none is sent to
+  us. Data held on your device persists until you clear it (or uninstall the app). Text sent to your
+  AI provider is retained according to that provider&rsquo;s policy, which we do not control.</p>
+
+  <h2 id="security">Security</h2>
+  <p>All network traffic from the app uses HTTPS. Your API key is stored in the app&rsquo;s private
+  storage. No method of transmission or storage is perfectly secure, but we have designed the app so
+  that the sensitive material &mdash; your typing and your key &mdash; stays on your device by
+  default.</p>
+
+  <h2 id="children">Children</h2>
+  <p>LexiBoard is a general-purpose keyboard and is not directed at children. It does not knowingly
+  collect personal information from anyone, including children.</p>
+
+  <h2 id="changes">Changes to this policy</h2>
+  <p>If this policy changes, the new version will be published at this URL with a new effective
+  date. Material changes will also be noted in the app&rsquo;s changelog.</p>
+
+  <h2 id="contact">Contact</h2>
+  <p>Questions or concerns about this policy or the app&rsquo;s data practices:
+  <a href="mailto:niranjanmeyda708@gmail.com">niranjanmeyda708@gmail.com</a>.</p>
+
+  <h2 id="open-source">Open source</h2>
+  <p>LexiBoard is built on <a href="https://florisboard.org" rel="noopener">FlorisBoard</a>, which is
+  free and open-source software. The app&rsquo;s source code is available in the project repository,
+  so you can verify the behaviour described in this policy for yourself.</p>
+
+  <footer>
+    &copy; 2026 NM.Co &middot; LexiBoard Privacy Policy &middot; Effective 15 October 2026
+  </footer>
+
+</main>
+</body>
+</html>
