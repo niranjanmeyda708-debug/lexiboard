@@ -1,0 +1,6 @@
+﻿{
+    "windowDays":  26,
+    "message":  "You\u0027ve used your free AI requests for this window.",
+    "requestLimit":  50,
+    "enabled":  true
+}
