@@ -58,7 +58,7 @@
 
   <h1>LexiBoard Privacy Policy</h1>
   <p class="meta">
-    <strong>Effective date:</strong> 15 October 2026<br>
+    <strong>Effective date:</strong> 2026-11-06<br>
     <strong>Applies to:</strong> the LexiBoard Android keyboard application (<code>com.lexiboard</code>)
   </p>
 
@@ -88,17 +88,17 @@
     <li><strong>Your AI provider API key</strong>, if you enter one.</li>
     <li><strong>Crash reports.</strong> If the app crashes, it can show you a local crash dialog and
     write a log to the app&rsquo;s private storage. Nothing is uploaded automatically.</li>
-    <li><strong>Screen text read by the screen translator</strong> is processed by an on-device OCR
-    engine (Google ML Kit, with the language models bundled inside the app). The image never leaves
-    the device; only the recognised text can leave, and only as described below.</li>
+    <li><strong>Screen text read by the screen translator</strong> is processed on your device by OCR (Google ML Kit, with a bundled on-device Tesseract fallback when needed). The screenshot/image never leaves your device; only the recognised text can leave, and only when you use an AI feature as described below.</li>
   </ul>
   <p>LexiBoard contains <strong>no advertising, no analytics, no crash-reporting SDK, and no
   third-party tracking of any kind</strong>. It has no user accounts and does not ask you to log
   in.</p>
 
   <h2 id="off-device">What is sent off your device, and when</h2>
-  <p>There are exactly two situations in which LexiBoard itself sends anything over the network.
-  Both require a deliberate action by you.</p>
+  <p>LexiBoard does not run a server of its own and does not collect personal data for us. The app
+  makes network requests in the limited situations below. Only the optional AI features send text
+  you choose to process; the other requests fetch small configuration files and do not include what
+  you type.</p>
 
   <h3>1. The AI features (Rephrase, Translate, and the screen translator)</h3>
   <p>These features are <strong>off until you explicitly agree</strong>, on a dedicated consent
@@ -132,6 +132,13 @@
   exist. This is a feature of the upstream FlorisBoard project and does not involve LexiBoard&rsquo;s
   publisher. No text you have typed is included. If you never tap that button, nothing is sent.</p>
 
+  <h3>3. Update and AI-limit checks</h3>
+  <p>To support required updates and AI usage limits, LexiBoard may fetch small JSON configuration
+  files (such as <code>version.json</code> and <code>ai-limit.json</code>) over HTTPS from this
+  project's GitHub Pages site (<code>niranjanmeyda708-debug.github.io/lexiboard</code>). These
+  requests do not contain what you type and are not used to identify you. They may occur when you
+  set up or use AI features, or when the app needs to check the current update/limit status.</p>
+
   <h2 id="permissions">Permissions and why they exist</h2>
   <div class="tablewrap">
     <table>
@@ -148,10 +155,13 @@
     </table>
   </div>
 
-  <h2 id="retention">Data retention</h2>
+    <h2 id="retention">Data retention</h2>
   <p>LexiBoard&rsquo;s publisher retains <strong>no</strong> personal data, because none is sent to
-  us. Data held on your device persists until you clear it (or uninstall the app). Text sent to your
-  AI provider is retained according to that provider&rsquo;s policy, which we do not control.</p>
+  us. Data held on your device persists until you clear it (or uninstall the app).</p>
+  <p>Text you send to an AI feature is transmitted to your configured AI provider for processing.
+  That provider may retain it after use according to its own policy and practices (for example, for
+  logging, abuse prevention, or service improvement), which we do not control. Review your
+  provider&rsquo;s privacy policy and terms before using AI features.</p>
 
   <h2 id="security">Security</h2>
   <p>All network traffic from the app uses HTTPS. Your API key is stored in the app&rsquo;s private
